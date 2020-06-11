@@ -1,7 +1,7 @@
 name: flutter_swapi
 description: The SWAPI (Star Wars API) SDK for Flutter SWAPI SDK
-author:
-homepage:
+author: thelabs.dev
+homepage: https://github.com/thelabs-dev/flutter_swapi
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
