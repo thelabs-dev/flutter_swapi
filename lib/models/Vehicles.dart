@@ -4,14 +4,14 @@ import 'package:flutter_swapi/models/ResponseList.dart';
 class VehiclesItem{
   String name;
   String model ;
-  String vehicle_class ;
+  String vehicleClass ;
   String manufacturer ;
   String length;
-  String cost_in_credits;
+  String costInCredits;
   String crew;
   String passengers;
-  String max_atmosphering_speed;
-  String cargo_capacity;
+  String maxAtmospheringSpeed;
+  String cargoCapacity;
   String consumables;
   List<String> films ;
   List<String> pilots ;
@@ -27,7 +27,7 @@ class VehiclesItem{
       model = map['model'];
 
     if (map.containsKey("vehicle_class"))
-      vehicle_class = map['vehicle_class'];
+      vehicleClass = map['vehicle_class'];
 
     if (map.containsKey("manufacturer"))
       manufacturer = map['manufacturer'];
@@ -36,7 +36,7 @@ class VehiclesItem{
       length = map['length'];
 
     if (map.containsKey("cost_in_credits"))
-      cost_in_credits = map['cost_in_credits'];
+      costInCredits = map['cost_in_credits'];
 
     if (map.containsKey("crew"))
       crew = map['crew'];
@@ -45,10 +45,10 @@ class VehiclesItem{
       passengers = map['passengers'];
 
     if (map.containsKey("max_atmosphering_speed"))
-      max_atmosphering_speed = map['max_atmosphering_speed'];
+      maxAtmospheringSpeed = map['max_atmosphering_speed'];
 
     if (map.containsKey("cargo_capacity"))
-      cargo_capacity = map['cargo_capacity'];
+      cargoCapacity = map['cargo_capacity'];
 
     if (map.containsKey("consumables"))
       consumables = map['consumables'];

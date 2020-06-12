@@ -26,7 +26,7 @@ void main() {
     for (int i = 0; i < planets.results.length; i++) {
       print(planets.results[i].name);
       PlanetsItem item = await swapi.getPlanetsItem(url: planets.results[i].url);
-      print("---> " + item.rotation_period);
+      print("---> " + item.rotationPeriod);
     }
   });
 

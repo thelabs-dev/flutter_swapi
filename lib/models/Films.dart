@@ -3,11 +3,11 @@ import 'package:flutter_swapi/models/ResponseList.dart';
 
 class FilmsItem{
   String title;
-  int episode_id;
-  String opening_crawl;
+  int episodeId;
+  String openingCrawl;
   String director;
   String producer;
-  String release_date;
+  String releaseDate;
   List<String> species;
   List<String> starships;
   List<String> vehicles;
@@ -22,10 +22,10 @@ class FilmsItem{
       title = map['title'];
 
     if (map.containsKey("episode_id"))
-      episode_id = map['episode_id'];
+      episodeId = map['episode_id'];
 
     if (map.containsKey("opening_crawl"))
-      opening_crawl = map['opening_crawl'];
+      openingCrawl = map['opening_crawl'];
 
     if (map.containsKey("director"))
       director = map['director'];
@@ -34,7 +34,7 @@ class FilmsItem{
       producer = map['producer'];
 
     if (map.containsKey("release_date"))
-      release_date = map['release_date'];
+      releaseDate = map['release_date'];
 
     if (map.containsKey("url"))
       url = map['url'];

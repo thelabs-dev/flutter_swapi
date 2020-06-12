@@ -4,16 +4,16 @@ import 'package:flutter_swapi/models/ResponseList.dart';
 class StarshipsItem{
   String name;
   String model ;
-  String starship_class ;
+  String starshipClass ;
   String manufacturer ;
-  String cost_in_credits;
+  String costInCredits;
   String length;
   String crew;
   String passengers;
-  String max_atmosphering_speed;
-  String hyperdrive_rating;
-  String MGLT;
-  String cargo_capacity;
+  String maxAtmospheringSpeed;
+  String hyperdriveRating;
+  String mglt;
+  String cargoCapacity;
   String consumables;
   List<String> films ;
   List<String> pilots ;
@@ -29,13 +29,13 @@ class StarshipsItem{
       model = map['model'];
 
     if (map.containsKey("starship_class"))
-      starship_class = map['starship_class'];
+      starshipClass = map['starship_class'];
 
     if (map.containsKey("manufacturer"))
       manufacturer = map['manufacturer'];
 
     if (map.containsKey("cost_in_credits"))
-      cost_in_credits = map['cost_in_credits'];
+      costInCredits = map['cost_in_credits'];
 
     if (map.containsKey("length"))
       length = map['length'];
@@ -47,16 +47,16 @@ class StarshipsItem{
       passengers = map['passengers'];
 
     if (map.containsKey("max_atmosphering_speed"))
-      max_atmosphering_speed = map['max_atmosphering_speed'];
+      maxAtmospheringSpeed = map['max_atmosphering_speed'];
 
     if (map.containsKey("hyperdrive_rating"))
-      hyperdrive_rating = map['hyperdrive_rating'];
+      hyperdriveRating = map['hyperdrive_rating'];
 
     if (map.containsKey("MGLT"))
-      MGLT = map['MGLT'];
+      mglt = map['MGLT'];
 
     if (map.containsKey("cargo_capacity"))
-      cargo_capacity = map['cargo_capacity'];
+      cargoCapacity = map['cargo_capacity'];
 
     if (map.containsKey("consumables"))
       consumables = map['consumables'];

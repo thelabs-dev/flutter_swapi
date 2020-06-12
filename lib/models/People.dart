@@ -3,13 +3,13 @@ import 'package:flutter_swapi/models/ResponseList.dart';
 
 class PeopleItem{
   String name;
-  String birth_year;
-  String eye_color;
+  String birthYear;
+  String eyeColor;
   String gender;
-  String hair_color;
+  String hairColor;
   String height;
   String mass;
-  String skin_color;
+  String skinColor;
   String homeworld;
   String url;
   String created;
@@ -25,16 +25,16 @@ class PeopleItem{
       name = map['name'];
 
     if (map.containsKey("birth_year"))
-      birth_year = map['birth_year'];
+      birthYear = map['birth_year'];
 
     if (map.containsKey("eye_color"))
-      eye_color = map['eye_color'];
+      eyeColor = map['eye_color'];
 
     if (map.containsKey("gender"))
       gender = map['gender'];
 
     if (map.containsKey("hair_color"))
-      hair_color = map['hair_color'];
+      hairColor = map['hair_color'];
 
     if (map.containsKey("height"))
       height = map['height'];
@@ -43,7 +43,7 @@ class PeopleItem{
       mass = map['mass'];
 
     if (map.containsKey("skin_color"))
-      skin_color = map['skin_color'];
+      skinColor = map['skin_color'];
 
     if (map.containsKey("homeworld"))
       homeworld = map['homeworld'];

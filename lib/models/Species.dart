@@ -5,11 +5,11 @@ class SpeciesItem{
   String name;
   String classification  ;
   String designation  ;
-  String average_height  ;
-  String average_lifespan ;
-  String eye_colors ;
-  String hair_colors ;
-  String skin_colors ;
+  String averageHeight  ;
+  String averageLifespan ;
+  String eyeColors ;
+  String hairColors ;
+  String skinColors ;
   String language ;
   String homeworld ;
   List<String> people ;
@@ -29,19 +29,19 @@ class SpeciesItem{
       designation = map['designation'];
 
     if (map.containsKey("average_height"))
-      average_height = map['average_height'];
+      averageHeight = map['average_height'];
 
     if (map.containsKey("average_lifespan"))
-      average_lifespan = map['average_lifespan'];
+      averageLifespan = map['average_lifespan'];
 
     if (map.containsKey("eye_colors"))
-      eye_colors = map['eye_colors'];
+      eyeColors = map['eye_colors'];
 
     if (map.containsKey("hair_colors"))
-      hair_colors = map['hair_colors'];
+      hairColors = map['hair_colors'];
 
     if (map.containsKey("skin_colors"))
-      skin_colors = map['skin_colors'];
+      skinColors = map['skin_colors'];
 
     if (map.containsKey("language"))
       language = map['language'];

@@ -4,13 +4,13 @@ import 'package:flutter_swapi/models/ResponseList.dart';
 class PlanetsItem{
   String name ;
   String diameter ;
-  String rotation_period ;
-  String orbital_period ;
+  String rotationPeriod ;
+  String orbitalPeriod ;
   String gravity ;
   String population ;
   String climate ;
   String terrain ;
-  String surface_water ;
+  String surfaceWater ;
   String url;
   String created;
   String edited;
@@ -26,10 +26,10 @@ class PlanetsItem{
       diameter = map['diameter'];
 
     if (map.containsKey("rotation_period"))
-      rotation_period = map['rotation_period'];
+      rotationPeriod = map['rotation_period'];
 
     if (map.containsKey("orbital_period"))
-      orbital_period = map['orbital_period'];
+      orbitalPeriod = map['orbital_period'];
 
     if (map.containsKey("gravity"))
       gravity = map['gravity'];
@@ -44,7 +44,7 @@ class PlanetsItem{
       terrain = map['terrain'];
 
     if (map.containsKey("surface_water"))
-      surface_water = map['surface_water'];
+      surfaceWater = map['surface_water'];
 
     if (map.containsKey("url"))
       url = map['url'];

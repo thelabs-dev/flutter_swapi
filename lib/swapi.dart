@@ -5,7 +5,7 @@ import 'package:flutter_swapi/flutter_swapi.dart';
 import 'package:flutter_swapi/models/Films.dart';
 
 
-class swapi{
+mixin swapi {
   static String _baseUrl = "https://swapi.dev/api/";
   static String _resourceFilms = "films/";
   static String _resourcePeople = "people/";
