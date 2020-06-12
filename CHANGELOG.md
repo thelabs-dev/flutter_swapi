@@ -1,3 +1,7 @@
+## 0.0.3
+
+* Health issues and suggestions
+
 ## 0.0.2
 
 * Minor bug fixes and improvements

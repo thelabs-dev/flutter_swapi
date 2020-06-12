@@ -1,7 +1,7 @@
-
 import 'package:flutter_swapi/models/ResponseList.dart';
 
-class PeopleItem{
+/// A People resource is an individual person or character within the Star Wars universe.
+class PeopleItem {
   String name;
   String birthYear;
   String eyeColor;
@@ -21,41 +21,29 @@ class PeopleItem{
   List<String> vehicles;
 
   PeopleItem(Map map) {
-    if (map.containsKey("name"))
-      name = map['name'];
+    if (map.containsKey("name")) name = map['name'];
 
-    if (map.containsKey("birth_year"))
-      birthYear = map['birth_year'];
+    if (map.containsKey("birth_year")) birthYear = map['birth_year'];
 
-    if (map.containsKey("eye_color"))
-      eyeColor = map['eye_color'];
+    if (map.containsKey("eye_color")) eyeColor = map['eye_color'];
 
-    if (map.containsKey("gender"))
-      gender = map['gender'];
+    if (map.containsKey("gender")) gender = map['gender'];
 
-    if (map.containsKey("hair_color"))
-      hairColor = map['hair_color'];
+    if (map.containsKey("hair_color")) hairColor = map['hair_color'];
 
-    if (map.containsKey("height"))
-      height = map['height'];
+    if (map.containsKey("height")) height = map['height'];
 
-    if (map.containsKey("mass"))
-      mass = map['mass'];
+    if (map.containsKey("mass")) mass = map['mass'];
 
-    if (map.containsKey("skin_color"))
-      skinColor = map['skin_color'];
+    if (map.containsKey("skin_color")) skinColor = map['skin_color'];
 
-    if (map.containsKey("homeworld"))
-      homeworld = map['homeworld'];
+    if (map.containsKey("homeworld")) homeworld = map['homeworld'];
 
-    if (map.containsKey("url"))
-      url = map['url'];
+    if (map.containsKey("url")) url = map['url'];
 
-    if (map.containsKey("created"))
-      created = map['created'];
+    if (map.containsKey("created")) created = map['created'];
 
-    if (map.containsKey("edited"))
-      edited = map['edited'];
+    if (map.containsKey("edited")) edited = map['edited'];
 
     films = new List();
     if (map.containsKey('films')) {
@@ -87,10 +75,11 @@ class PeopleItem{
   }
 }
 
-class People extends ResponseList{
+/// Collection of PeopleItem
+class People extends ResponseList {
   List<PeopleItem> results;
 
-  People(Map map) : super(map){
+  People(Map map) : super(map) {
     results = new List();
     if (map.containsKey('results')) {
       for (int i = 0; i < map['results'].length; i++) {

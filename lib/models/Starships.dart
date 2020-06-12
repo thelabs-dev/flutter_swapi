@@ -1,11 +1,11 @@
-
 import 'package:flutter_swapi/models/ResponseList.dart';
 
-class StarshipsItem{
+/// A Starship resource is a single transport craft that has hyperdrive capability.
+class StarshipsItem {
   String name;
-  String model ;
-  String starshipClass ;
-  String manufacturer ;
+  String model;
+  String starshipClass;
+  String manufacturer;
   String costInCredits;
   String length;
   String crew;
@@ -15,36 +15,30 @@ class StarshipsItem{
   String mglt;
   String cargoCapacity;
   String consumables;
-  List<String> films ;
-  List<String> pilots ;
+  List<String> films;
+  List<String> pilots;
   String url;
   String created;
   String edited;
 
   StarshipsItem(Map map) {
-    if (map.containsKey("name"))
-      name = map['name'];
+    if (map.containsKey("name")) name = map['name'];
 
-    if (map.containsKey("model"))
-      model = map['model'];
+    if (map.containsKey("model")) model = map['model'];
 
     if (map.containsKey("starship_class"))
       starshipClass = map['starship_class'];
 
-    if (map.containsKey("manufacturer"))
-      manufacturer = map['manufacturer'];
+    if (map.containsKey("manufacturer")) manufacturer = map['manufacturer'];
 
     if (map.containsKey("cost_in_credits"))
       costInCredits = map['cost_in_credits'];
 
-    if (map.containsKey("length"))
-      length = map['length'];
+    if (map.containsKey("length")) length = map['length'];
 
-    if (map.containsKey("crew"))
-      crew = map['crew'];
+    if (map.containsKey("crew")) crew = map['crew'];
 
-    if (map.containsKey("passengers"))
-      passengers = map['passengers'];
+    if (map.containsKey("passengers")) passengers = map['passengers'];
 
     if (map.containsKey("max_atmosphering_speed"))
       maxAtmospheringSpeed = map['max_atmosphering_speed'];
@@ -52,23 +46,18 @@ class StarshipsItem{
     if (map.containsKey("hyperdrive_rating"))
       hyperdriveRating = map['hyperdrive_rating'];
 
-    if (map.containsKey("MGLT"))
-      mglt = map['MGLT'];
+    if (map.containsKey("MGLT")) mglt = map['MGLT'];
 
     if (map.containsKey("cargo_capacity"))
       cargoCapacity = map['cargo_capacity'];
 
-    if (map.containsKey("consumables"))
-      consumables = map['consumables'];
+    if (map.containsKey("consumables")) consumables = map['consumables'];
 
-    if (map.containsKey("url"))
-      url = map['url'];
+    if (map.containsKey("url")) url = map['url'];
 
-    if (map.containsKey("created"))
-      created = map['created'];
+    if (map.containsKey("created")) created = map['created'];
 
-    if (map.containsKey("edited"))
-      edited = map['edited'];
+    if (map.containsKey("edited")) edited = map['edited'];
 
     films = new List();
     if (map.containsKey('films')) {
@@ -86,10 +75,11 @@ class StarshipsItem{
   }
 }
 
-class Starships extends ResponseList{
+/// Collection of StarshipsItem
+class Starships extends ResponseList {
   List<StarshipsItem> results;
 
-  Starships(Map map) : super(map){
+  Starships(Map map) : super(map) {
     results = new List();
     if (map.containsKey('results')) {
       for (int i = 0; i < map['results'].length; i++) {
