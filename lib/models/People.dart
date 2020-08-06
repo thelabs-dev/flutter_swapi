@@ -1,4 +1,4 @@
-import 'package:flutter_swapi/models/ResponseList.dart';
+import 'package:dart_swapi/models/ResponseList.dart';
 
 /// A People resource is an individual person or character within the Star Wars universe.
 class PeopleItem {

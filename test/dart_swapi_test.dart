@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 
-import 'package:flutter_swapi/flutter_swapi.dart';
+import 'package:dart_swapi/dart_swapi.dart';
 
 
 void main() {

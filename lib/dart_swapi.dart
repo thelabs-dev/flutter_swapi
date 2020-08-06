@@ -1,4 +1,4 @@
-library flutter_swapi;
+library dart_swapi;
 
 export 'swapi.dart';
 export 'models/Films.dart';

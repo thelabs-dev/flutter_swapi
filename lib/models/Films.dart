@@ -1,4 +1,4 @@
-import 'package:flutter_swapi/models/ResponseList.dart';
+import 'package:dart_swapi/models/ResponseList.dart';
 
 /// A Film resource is a single film.
 class FilmsItem {

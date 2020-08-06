@@ -1,4 +1,4 @@
-# flutter_swapi
+# dart_swapi
 
 A Dart plugin implementation of the SWAPI (The Star Wars API)
 

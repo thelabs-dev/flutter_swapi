@@ -1,4 +1,4 @@
-import 'package:flutter_swapi/models/ResponseList.dart';
+import 'package:dart_swapi/models/ResponseList.dart';
 
 /// A Species resource is a type of person or character within the Star Wars Universe.
 class SpeciesItem {

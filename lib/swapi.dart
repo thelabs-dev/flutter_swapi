@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:flutter_swapi/flutter_swapi.dart';
-import 'package:flutter_swapi/models/Films.dart';
+import 'package:dart_swapi/dart_swapi.dart';
+import 'package:dart_swapi/models/Films.dart';
 
 mixin swapi {
   static String _baseUrl = "https://swapi.dev/api/";

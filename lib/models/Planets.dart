@@ -1,4 +1,4 @@
-import 'package:flutter_swapi/models/ResponseList.dart';
+import 'package:dart_swapi/models/ResponseList.dart';
 
 /// A Planet resource is a large mass, planet or planetoid in the Star Wars Universe, at the time of 0 ABY.
 class PlanetsItem {
