@@ -1,3 +1,11 @@
+## 0.1.0
+
+* Single quotes
+
+## 0.0.4
+
+* Unused dependencies are removed
+
 ## 0.0.3
 
 * Health issues and suggestions

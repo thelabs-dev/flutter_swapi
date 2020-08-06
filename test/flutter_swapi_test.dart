@@ -1,6 +1,7 @@
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 
 import 'package:flutter_swapi/flutter_swapi.dart';
+
 
 void main() {
   test('People', () async {

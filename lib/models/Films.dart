@@ -18,23 +18,23 @@ class FilmsItem {
   String edited;
 
   FilmsItem(Map map) {
-    if (map.containsKey("title")) title = map['title'];
+    if (map.containsKey('title')) title = map['title'];
 
-    if (map.containsKey("episode_id")) episodeId = map['episode_id'];
+    if (map.containsKey('episode_id')) episodeId = map['episode_id'];
 
-    if (map.containsKey("opening_crawl")) openingCrawl = map['opening_crawl'];
+    if (map.containsKey('opening_crawl')) openingCrawl = map['opening_crawl'];
 
-    if (map.containsKey("director")) director = map['director'];
+    if (map.containsKey('director')) director = map['director'];
 
-    if (map.containsKey("producer")) producer = map['producer'];
+    if (map.containsKey('producer')) producer = map['producer'];
 
-    if (map.containsKey("release_date")) releaseDate = map['release_date'];
+    if (map.containsKey('release_date')) releaseDate = map['release_date'];
 
-    if (map.containsKey("url")) url = map['url'];
+    if (map.containsKey('url')) url = map['url'];
 
-    if (map.containsKey("created")) created = map['created'];
+    if (map.containsKey('created')) created = map['created'];
 
-    if (map.containsKey("edited")) edited = map['edited'];
+    if (map.containsKey('edited')) edited = map['edited'];
 
     species = new List();
     if (map.containsKey('species')) {
